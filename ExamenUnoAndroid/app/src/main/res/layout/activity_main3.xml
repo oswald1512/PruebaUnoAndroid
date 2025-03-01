@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+  >
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cálculo de Promedio"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-medium"
+        android:padding="10dp"/>
+
+    <!-- EditText para Nombre -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTitle"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="start"
+        android:hint="Escribe tu Nombre"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textAlignment="textStart"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp" />
+
+    <!-- EditText para Nota 1 -->
+    <EditText
+        android:id="@+id/editValue1"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="start"
+        android:hint="Nota 1"
+        android:textSize="20sp"
+        android:textAlignment="textStart"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp" />
+
+    <!-- EditText para Nota 2 -->
+    <EditText
+        android:id="@+id/editValue2"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editValue1"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="start"
+        android:hint="Nota 2"
+        android:textSize="20sp"
+        android:textAlignment="textStart"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp" />
+
+    <!-- EditText para Nota 3 -->
+    <EditText
+        android:id="@+id/editValue3"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editValue2"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="start"
+        android:hint="Nota 3"
+        android:textSize="20sp"
+        android:textAlignment="textStart"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp" />
+
+    <!-- EditText para Nota 4 -->
+    <EditText
+        android:id="@+id/editValue4"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editValue3"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="start"
+        android:hint="Nota 4"
+        android:textSize="20sp"
+        android:textAlignment="textStart"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp" />
+
+    <!-- EditText para Nota 5 -->
+    <EditText
+        android:id="@+id/editValue5"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editValue4"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="start"
+        android:hint="Nota 5"
+        android:textSize="20sp"
+        android:textAlignment="textStart"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp" />
+
+    <!-- Botón Calcular -->
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editValue5"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:padding="15dp"
+        android:text="Calcular"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <!-- Resultado -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalculate"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_orange_dark"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Aquí aparecerán los cálculos"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+
+    <!-- Título de la App -->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cálculo de Salario"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:padding="10dp"/>
+
+    <!-- Campo para el Nombre -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe tu Nombre"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        android:padding="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textTitle"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Campo para el Salario -->
+    <EditText
+        android:id="@+id/editTextSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digita tu Salario"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:padding="20dp"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Botón para Calcular -->
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/editTextSalary"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Resultado -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:text="Aquí aparecerán los cálculos"
+        android:textSize="25sp"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/buttonCalculate"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
